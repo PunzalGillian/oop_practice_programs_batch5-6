@@ -1,4 +1,7 @@
-#Prog06: Create a program that ask user to input 2 numbers. Print the result when the first number is raised to the second number.
+# Prog06: Create a program that ask user to input 2 numbers. 
+# Print the result when the 1st number is raised to the 2nd number
 
-# Get num1 and num2 from user
-# Print num1 raised to the power of num2
+num1 = float(input("Enter a number: "))
+num2 = float(input("Enter a number: "))
+
+print(num1 ** num2)
