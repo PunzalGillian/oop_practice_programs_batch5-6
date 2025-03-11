@@ -5,5 +5,10 @@
 # If number ends in 0 or 5, don't append in list
 # Print the list
 
-num1 = float(input("Enter a number: "))
-num2 = float(input("Enter a number: "))
+no_num_ending_in_0_or_5 = []
+
+for count in range(101):
+    if count % 10 != 0 and count % 5 != 0:
+        no_num_ending_in_0_or_5.append(count)
+
+print(no_num_ending_in_0_or_5)

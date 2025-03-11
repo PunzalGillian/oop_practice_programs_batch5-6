@@ -3,3 +3,9 @@
 
 # Get num1 and num2 from user
 # Print "Not Equal" when num1 and num2 are not the same
+
+num1 = float(input("Enter a number: "))
+num2 = float(input("Enter a number: "))
+
+if num1 != num2:
+    print("Not Equal")
