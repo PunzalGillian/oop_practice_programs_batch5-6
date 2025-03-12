@@ -1,0 +1,7 @@
+# Prog03: Create a program that ask user to input a number, 
+# Continue asking until the user input is invalid. 
+# Display the highest number
+
+# Initialize a list
+# Get user input till it valueerrors. store in a list
+# Find the highest number in the list and print
