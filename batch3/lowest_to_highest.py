@@ -2,7 +2,13 @@
 # continue asking until the user input is invalid. 
 # Display the number from lowest to highest. Clue: sort() function
 
-# Initialize empty list
-# Get number from user and append to list
-# Sort list from lowest to highest
-# Print list
+num_list = []
+
+while True:
+    try:
+        num = int(input("Enter a number: "))
+        num_list.append(num)
+    except ValueError:
+        num_list.sort()
+        print(num_list)
+        break
