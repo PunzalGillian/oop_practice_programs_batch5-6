@@ -2,7 +2,13 @@
 # Continue asking until the user input is invalid. 
 # Display the average.
 
-# Initialize list
-# Get numbers from user till it valueerrors. store in list.
-# Calculate average
-# Display the average
+num_list = [] 
+
+while True:
+    try:
+        num = float(input("Enter a number: "))
+        num_list.append(num)
+    except ValueError:
+        average = sum(num_list) / len(num_list)
+        print(f"Average is: {average}")
+        break

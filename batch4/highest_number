@@ -2,6 +2,12 @@
 # Continue asking until the user input is invalid. 
 # Display the highest number
 
-# Initialize a list
-# Get user input till it valueerrors. store in a list
-# Find the highest number in the list and print
+num_list = []
+
+while True: 
+    try:
+        num = float(input("Enter a number: "))
+        num_list.append(num)
+    except ValueError:
+        print("Highest number is: ", max(num_list))
+        break
