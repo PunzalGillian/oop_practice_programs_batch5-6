@@ -6,6 +6,11 @@
 # the weather whether we like it or not
 # Output: 14
 
-# get user input
-# split the words and count the number of words in the input
-# print the number of words
+while True:
+    try:
+        statement = str(input("Enter a statement: "))
+        num_of_words = len(statement.split())
+        print(num_of_words)
+        break
+    except ValueError:
+        print("Invalid input")
