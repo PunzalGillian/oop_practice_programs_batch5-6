@@ -4,5 +4,10 @@
 # Input: Juan Dela Cruz
 # Output: 14
 
-# get user input
-# count num of char then print the num of char
+while True: 
+    try:
+        name = str(input("Enter your name: "))
+        print(len(name))
+        break
+    except ValueError:
+        print("Invalid input")
