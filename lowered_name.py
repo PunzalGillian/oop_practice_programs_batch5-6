@@ -3,5 +3,10 @@
 # Input: Juan Dela Cruz
 # Output: juan dela cruz
 
-# ask for user input
-# convert input to lowercase and print
+while True: 
+    try:
+        name = str(input("Enter your name: "))
+        print(name.lower())
+        break
+    except ValueError:
+        print("Invalid input")
