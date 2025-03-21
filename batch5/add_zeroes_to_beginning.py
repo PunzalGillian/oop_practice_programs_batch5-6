@@ -19,6 +19,7 @@ while True:
             print(f"0000{num}")
         elif len(num) == 1:
             print(f"00000{num}")
+        break
     except ValueError:
         print("Invalid input. Please enter a number from 0-1000.")
 
