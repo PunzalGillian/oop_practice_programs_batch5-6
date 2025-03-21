@@ -5,6 +5,10 @@
 # Input: jUAn DEla CrUZ
 # Output: juan_dela_cruz
 
-# get the input from the user
-# convert the input to lower then replace space with underscore
-# print the input in snake case
+while True:
+    try: 
+        name = str(input("Enter name: "))
+        print(name.lower().replace(" ", "_"))
+        break
+    except ValueError:
+        print("Invalid input")
