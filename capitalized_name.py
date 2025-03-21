@@ -3,6 +3,10 @@
 # Input: Juan Dela Cruz
 # Output: JUAN DELA CRUZ
 
-# Get user input
-# Conver the input to uppercase using built in function upper()
-# Print the input
+while True:
+    try: 
+        name = str(input("Enter your full name: "))
+        print(name.upper())
+        break
+    except ValueError: 
+        print("Invalid input")
