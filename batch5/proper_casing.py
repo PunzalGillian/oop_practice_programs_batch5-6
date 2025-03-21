@@ -2,6 +2,10 @@
 # Example:
 # Input: jUAn DEla CrUZ
 # Output: Juan Dela Cruz
-
-# get user input
-# convert input to proper casing and print
+while True:
+    try:
+        name = str(input("Enter your name: "))
+        print(name.title())
+        break
+    except ValueError:
+        print("Invalid input")
