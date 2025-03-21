@@ -4,8 +4,10 @@
 # Example:
 # Input: jUAn DEla CrUZ
 # Output: JuanDelaCruz
-
-# get userinput
-# remove white space then use title case
-# print the result
-
+while True:
+    try:
+        name= str(input("Enter your name: "))
+        print(name.title().replace(" ", ""))
+        break
+    except ValueError:
+        print("Invalid input")
