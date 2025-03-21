@@ -4,6 +4,11 @@
 # Example:
 # Input:         Juan Dela Cruz
 # Output: Juan Dela Cruz
-
-name = str(input("Enter your full name with spaces at the beginning: "))
-print(name.lstrip())
+while True: 
+    try: 
+        name = str(input("Enter your full name with " \
+        "spaces at the beginning:"))
+        print(name.lstrip())
+        break
+    except ValueError:
+        print("Invalid input")
