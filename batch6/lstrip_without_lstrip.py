@@ -2,6 +2,10 @@
 # of the string. Create a program that do the same functionality 
 # without using lstrip() function.
 
-# Get string input from user
-# remove the space at the beginning of the string
-# and print the result
+char = 0
+input_string = input("Enter a string: ")
+
+while char < len(input_string) and input_string[char] == ' ':
+    char += 1
+
+print(input_string[char:])
