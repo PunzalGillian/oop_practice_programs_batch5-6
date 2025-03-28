@@ -2,6 +2,16 @@
 # capital letter. And all other letter in small case. Create a program 
 # that do the same functionality without using title() function.
 
-# get string input
-# split words then capitalize each words
-# combine again then print result
+input_string = input("Enter a string: ")
+result = ""
+words = input_string.split()
+
+for word in words:
+    for index, char in enumerate(word):
+        if index == 0:
+            result += char.upper()
+        else:
+            result += char.lower()
+    result += " " 
+
+print("Result:", result)
