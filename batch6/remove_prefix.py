@@ -1,8 +1,12 @@
-# Prog02. removeprefix() remove the characters at the 
+# Prog02. removeprefix() remove the characters at the
 # beginning of the string that matches the function parameter.
-# Create a program that do the same functionality 
+# Create a program that do the same functionality
 # without using removeprefix() function.
 
-# get string from user input
-# get prefix to remove
-# remove the prefix and print
+input_string = input("Enter a string: ")
+prefix = input("Enter the prefix to remove: ")
+
+if input_string.startswith(prefix) and prefix:
+    print(input_string[len(prefix):])   
+else:
+    print(input_string)
