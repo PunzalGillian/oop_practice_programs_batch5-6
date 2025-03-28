@@ -2,6 +2,12 @@
 # And all other letter in small case. Create a program that do the same 
 # functionality without using capitalize() function.
 
-# get user input
-# capitalize first letter in the string and lower the rest.
-# print result
+input_string = input("Enter a string: ")
+result = ""
+
+for index, char in enumerate(input_string):
+    if index == 0:
+        result += char.upper()
+    else:
+        result += char.lower()
+print("Result:", result)
