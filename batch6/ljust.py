@@ -3,8 +3,13 @@
 # Create a program that do the same functionality 
 # without using ljust() function.
 
-# get string input.
-# get the character and its numbers to fill
-# create a new string, fill it with the input string
-# fill the rest of the string with the character
-# print the new string'
+input_string = input("Enter a string: ")
+width = int(input("Enter the width: "))
+fill_char = input("Enter the fill character: ")
+
+if len (input_string) < width:
+    fill_char = fill_char * (width - len(input_string))
+else: 
+    fill_char = ''
+
+print(input_string + fill_char)
