@@ -2,7 +2,15 @@
 # case. Create a program that do the same functionality 
 # without using isupper() function.
 
-# get string input
-# ceck if all characters are upper case
-# if all characters are upper case, print True
-# else, print False
+input_string = input("Enter a string: ")
+is_upper = True
+char = 0
+
+while char < len(input_string):
+    if 'A' <= input_string[char] <= 'Z':
+        char += 1
+    else:
+        is_upper = False
+        break
+
+print(is_upper)
