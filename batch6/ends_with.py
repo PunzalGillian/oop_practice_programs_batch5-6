@@ -2,6 +2,7 @@
 # parameter. Create a program that do the same functionality 
 # without using endswith() function.
 
-# get the string and the suffix from the user
-# if the string ends with the suffix, print True
-# otherwise, print False
+input_string = input("Enter a string: ")
+suffix = input("Enter the suffix to check: ")
+
+print(input_string[-len(suffix):] == suffix if suffix else True)
