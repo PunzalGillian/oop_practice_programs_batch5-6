@@ -2,11 +2,14 @@
 # in the string. Create a program that do the same functionality without
 # using index() function.
 
-# get user string input
-# get the character or string to search for
-# initialize index variable to -1
-# loop through the string
-# check if the character or string is found
-# if found, set index variable to the current position and break the loop
-# print the index variable
-# if index variable is still -1, print a message indicating not found
+input_string = input("Enter a string: ")
+search_string = input("Enter the character or string to search for: ")
+index = -1
+
+for char in range(len(input_string) - len(search_string) + 1):
+    if input_string[char:char + len(search_string)] == search_string:
+        index = char
+        break
+
+print(index)
+
