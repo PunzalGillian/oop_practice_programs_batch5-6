@@ -2,8 +2,7 @@
 # function parameter. Create a program that do the same functionality
 # without using startswith() function.
 
-# get string input and prefix
-# check if string starts with prefix
-# if prefix is empty, return True
-# if string starts with prefix, return True
-# else return False
+input_string = input("Enter a string: ")
+prefix = input("Enter the prefix to check: ")
+
+print(input_string[:len(prefix)] == prefix if prefix else True)
