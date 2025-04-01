@@ -9,3 +9,14 @@
 # if so, fill the string with the fill character
 # else, fill the string with empty string
 # print the string with the fill character at the start then the string
+
+input_string = input("Enter a string: ")
+width = int(input("Enter the width: "))
+fill_char = input("Enter the fill character: ")
+
+if len(input_string) < width:
+    fill_char = fill_char * (width - len(input_string))
+else:
+    fill_char = ''
+
+print(fill_char + input_string)
