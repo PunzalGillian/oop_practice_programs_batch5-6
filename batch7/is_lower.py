@@ -2,10 +2,15 @@
 # on lower case. Create a program that do the same 
 # functionality without using islower() function.
 
-# get user input
-# initialize is_lower to True
-# initialize char to 0
-# check if char is lower case
-# if char is lower case, increment char
-# else set is_lower to False and break the loop
-# print is_lower
+input_string = input("Enter a string: ")
+is_lower = True
+char = 0
+
+while char < len(input_string):
+    if 'a' <= input_string[char] <= 'z':
+        char += 1
+    else:
+        is_lower = False
+        break
+
+print(is_lower)
