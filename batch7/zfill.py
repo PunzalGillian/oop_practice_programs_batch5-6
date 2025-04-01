@@ -3,10 +3,12 @@
 # Create a program that do the same functionality w
 # without using zfill() function.
 
-# get user string input
-# get user number of characters to fill
-# create a function that adds zeros to the beginning of the string
-# check if string >= number of characters to fill
-# if true return string
-# else add zeros to the beginning of the string until it reaches the number of characters
-# return the new string
+input_string = input("Enter a string: ")
+num_characters = int(input("Enter the number of characters to fill: "))
+
+if len(input_string) < num_characters:
+    fill_zeros = '0' * (num_characters - len(input_string))
+else:
+    fill_zeros = ''
+
+print(fill_zeros + input_string)

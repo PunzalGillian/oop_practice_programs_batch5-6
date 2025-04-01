@@ -3,13 +3,6 @@
 # Create a program that do the same functionality without 
 # using rjust() function.
 
-# get user input
-# get width and fill character
-# check if the length of the character is less than the width
-# if so, fill the string with the fill character
-# else, fill the string with empty string
-# print the string with the fill character at the start then the string
-
 input_string = input("Enter a string: ")
 width = int(input("Enter the width: "))
 fill_char = input("Enter the fill character: ")
