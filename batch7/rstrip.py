@@ -2,6 +2,12 @@
 # Create a program that do the same functionality without 
 # using rstrip() function.
 
-# get the string from user
-# remove the space characters at the end of the string
-# print the new string
+input_string = input("Enter a string: ")
+count = len(input_string) - 1
+
+while count >= 0 and input_string[count] == ' ':
+    count -= 1
+
+print(input_string[:count + 1] + "|")
+# The "|" is used to show the end of the string.
+
